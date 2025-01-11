@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fmg>
+<compression>None</compression>
+<version>DarkSouls3</version>
+<bigendian>False</bigendian>
+<unicode>True</unicode>
+<entries>
+<text id="1">确定</text>
+<text id="2">取消</text>
+<text id="3">是</text>
+<text id="4">否</text>
+<text id="15">重试</text>
+<text id="16">继续</text>
+<text id="17">返回标题</text>
+<text id="18">%null%</text>
+<text id="19">%null%</text>
+<text id="20">是，我会的</text>
+<text id="21">从不</text>
+<text id="22">我会猎杀旧亚楠的野兽</text>
+<text id="23">我不会猎杀旧亚楠的野兽</text>
+<text id="4001">无法连接至 Bloodborne 服务器。
+即将返回标题菜单。</text>
+<text id="4002">%null%</text>
+<text id="4003">%null%</text>
+<text id="4004">%null%</text>
+<text id="4005">%null%</text>
+<text id="4006">更改隐私设置失败。
+请稍后重试。</text>
+<text id="4007">无法获取圣杯地牢信息。
+请稍后重试。</text>
+<text id="4008">%null%</text>
+<text id="4009">加入圣杯地牢失败。
+请稍后重试。</text>
+<text id="4010">%null%</text>
+<text id="4011">未能献上仪式材料。
+请稍后重试。</text>
+<text id="4101">Bloodborne 服务器管理员已限制此 Sony 
+Entertainment Network 帐户对多人游戏
+功能的访问。</text>
+<text id="4102">Bloodborne 服务器管理员已限制此 Sony 
+Entertainment Network 帐户记下或阅读
+笔记的功能。</text>
+<text id="4103">Bloodborne 服务器管理员已限制此 Sony 
+Entertainment Network 帐户的圣杯地牢
+功能。</text>
+<text id="4104">Bloodborne 服务器管理员已限制此 Sony 
+Entertainment Network 帐户的观战功能。</text>
+<text id="4201">Bloodborne 服务器不再可用。
+即将返回标题菜单。</text>
+<text id="4301">与 Bloodborne 服务器的连接已丢失。
+即将返回标题菜单。</text>
+<text id="4401">&lt;?ssInfoMsg?&gt;
+即将返回标题菜单。</text>
+<text id="4402">无法解析 Bloodborne 服务器的状态。
+即将返回标题菜单。</text>
+<text id="4403">无法获取 Bloodborne 服务器信息。
+即将返回标题菜单。</text>
+<text id="4601">无法连接至 Bloodborne 服务器。
+即将返回标题菜单。</text>
+<text id="4602">由于长时间未加使用，
+所选地下城的数据已从 Bloodborne 服务器
+删除。</text>
+<text id="4603">使用给出的圣杯铭文未发现地牢</text>
+<text id="4604">你未满足加入与此圣杯铭文相符的地牢所需的要求</text>
+<text id="4605">未发现可以加入的地牢。</text>
+<text id="4606">找不到符合要求的圣杯地牢。</text>
+<text id="4701">网络连接已断开。
+即将返回标题菜单。</text>
+<text id="4801">你已登出 "PlayStation Network"。
+即将返回标题菜单。</text>
+<text id="4802">与 "PlayStation Network" 的通讯已断开。
+即将返回标题菜单。</text>
+<text id="4803">你的 PlayStation(R)Plus 会员已过期。
+即将返回标题菜单。</text>
+<text id="5001">会话断开</text>
+<text id="5002">因连接不稳而退出会话</text>
+<text id="5003">网络错误
+结束多人游戏</text>
+<text id="40200">血之回响不足</text>
+<text id="40201">%null%</text>
+<text id="40202">%null%</text>
+<text id="40203">灵视不足。</text>
+<text id="40300">要还原为默认设置吗?</text>
+<text id="102000">请选择丢弃&lt;?itemName?&gt;的数量。</text>
+<text id="102001">丢弃&lt;?itemName?&gt;</text>
+<text id="102002">这将丢弃所选物品。</text>
+<text id="102003">无法丢弃此物品。</text>
+<text id="102004">选择要使用的&lt;?itemName?&gt;数量</text>
+<text id="102005">%null%</text>
+<text id="102006">%null%</text>
+<text id="102007">%null%</text>
+<text id="102008">%null%</text>
+<text id="102009">%null%</text>
+<text id="102010">无法丢弃当前装备中的物品。</text>
+<text id="102011">%null%</text>
+<text id="102012">%null%</text>
+<text id="102013">%null%</text>
+<text id="102014">%null%</text>
+<text id="102015">%null%</text>
+<text id="102016">%null%</text>
+<text id="102017">%null%</text>
+<text id="102018">%null%</text>
+<text id="102019">%null%</text>
+<text id="102020">无法使用尚未达到属性要求的物品。</text>
+<text id="102021">%null%</text>
+<text id="102022">%null%</text>
+<text id="102023">%null%</text>
+<text id="102024">%null%</text>
+<text id="102025">%null%</text>
+<text id="102026">%null%</text>
+<text id="102027">%null%</text>
+<text id="102028">%null%</text>
+<text id="102029">%null%</text>
+<text id="102030">使用这个物品没有效果</text>
+<text id="102031">%null%</text>
+<text id="102032">%null%</text>
+<text id="102033">%null%</text>
+<text id="102034">%null%</text>
+<text id="102035">%null%</text>
+<text id="102036">%null%</text>
+<text id="102037">%null%</text>
+<text id="102038">%null%</text>
+<text id="102039">%null%</text>
+<text id="102040">物品售出时，镶嵌的血晶石将被丢弃。
+是否确定?</text>
+<text id="102041">%null%</text>
+<text id="102042">%null%</text>
+<text id="102043">%null%</text>
+<text id="102044">%null%</text>
+<text id="102045">%null%</text>
+<text id="102046">%null%</text>
+<text id="102047">%null%</text>
+<text id="102048">%null%</text>
+<text id="102049">%null%</text>
+<text id="102050">此行动将使灵视超出最大值。
+超出的灵视将会损失。
+是否确定要这样做?</text>
+<text id="102051">此行动将使血之回响超出最大值。
+超出的血之回响将会损失。
+是否确定要这样做?</text>
+<text id="103000">无法装备尚未达到属性要求的物品。</text>
+<text id="104000">无法装备尚未达到属性要求的物品。</text>
+<text id="110000">退出游戏并返回标题画面?</text>
+<text id="110001">%null%</text>
+<text id="110002">%null%</text>
+<text id="110003">%null%</text>
+<text id="110004">%null%</text>
+<text id="110005">%null%</text>
+<text id="110006">%null%</text>
+<text id="110007">%null%</text>
+<text id="110008">%null%</text>
+<text id="110009">%null%</text>
+<text id="110010">离线模式无法使用网络。
+
+要使用网络功能，请在标题菜单上选择“登入”。</text>
+<text id="110011">离线模式无法使用网络。
+
+要使用网络功能，请返回标题菜单并登入。</text>
+<text id="114000">用户生成的媒体限制
+已由家长控制进行了设置。
+其他玩家的名称将被
+限制为在线 ID。</text>
+<text id="211000">花费 &lt;?demandSoul?&gt; 血之回响
+并升级?</text>
+<text id="211001">确定取消所编辑的更改?</text>
+<text id="211002">未选择可增加的属性。</text>
+<text id="211003">%null%</text>
+<text id="211004">%null%</text>
+<text id="211005">%null%</text>
+<text id="211006">%null%</text>
+<text id="211007">%null%</text>
+<text id="211008">%null%</text>
+<text id="211009">%null%</text>
+<text id="211010">等级已达最高。
+无法继续提升等级。</text>
+<text id="212000">效果与所记忆的卡丽尔符文相覆盖。
+覆盖的效果将不会堆叠。
+是否确认?</text>
+<text id="221000">要使用 &lt;?demandSoul?&gt; 血之回响并使用
+&lt;?demandItemName?&gt; × &lt;?demandItemNum?&gt;
+来强化武器吗?</text>
+<text id="221001">血之回响或血石不足。</text>
+<text id="221002">此武器已完全升级，无法再进一步
+升级。</text>
+<text id="221003">%null%</text>
+<text id="221004">%null%</text>
+<text id="221005">%null%</text>
+<text id="221006">%null%</text>
+<text id="221007">%null%</text>
+<text id="221008">%null%</text>
+<text id="221009">%null%</text>
+<text id="221010">强化需要更多血之回响</text>
+<text id="221011">强化需要更多血石</text>
+<text id="221012">强化需要更多血石和血之回响</text>
+<text id="222000">无法移除此血晶石。</text>
+<text id="222001">正在移除血晶石。
+移除的血晶石将丢失。</text>
+<text id="222002">正在将新的血晶石镶嵌在旧的宝石之上。
+旧的血晶石将丢失。</text>
+<text id="222003">这颗血晶石在镶嵌之后将无法去除。
+是否确定要将其镶嵌?</text>
+<text id="222004">效果与已镶嵌的血晶石相覆盖。
+覆盖的效果将不会堆叠。
+是否确认?</text>
+<text id="222005">镶嵌到武器的血晶石只能通过镶嵌其他血晶石来移除</text>
+<text id="222006">物品栏已满。无法解除装备。</text>
+<text id="223000">使用 &lt;?demandSoul?&gt; 血之回响来修复&lt;?itemName?&gt;。</text>
+<text id="223001">使用 &lt;?demandSoul?&gt; 血之回响修复所有损失了耐久度的武器。</text>
+<text id="231000">选择要购买的数量。</text>
+<text id="231001">要用 &lt;?demandSoul?&gt; 血之回响
+购买&lt;?itemName?&gt;吗?</text>
+<text id="231002">要用 &lt;?demandHeroic?&gt; 灵视
+购买&lt;?itemName?&gt;吗?</text>
+<text id="231003">接收&lt;?itemName?&gt;</text>
+<text id="231004">%null%</text>
+<text id="231005">%null%</text>
+<text id="231006">%null%</text>
+<text id="231007">%null%</text>
+<text id="231008">%null%</text>
+<text id="231009">%null%</text>
+<text id="231010">物品栏已满。无法购买。</text>
+<text id="231011">%null%</text>
+<text id="231012">%null%</text>
+<text id="231013">%null%</text>
+<text id="231014">%null%</text>
+<text id="231015">%null%</text>
+<text id="231016">%null%</text>
+<text id="231017">%null%</text>
+<text id="231018">%null%</text>
+<text id="231019">%null%</text>
+<text id="231020">超过持有上限的物品已存放在仓库中</text>
+<text id="232000">选择要售出的数量。</text>
+<text id="232001">要售出&lt;?itemName?&gt;吗?
+可获得 &lt;?sellSouls?&gt; 血之回响。</text>
+<text id="232002">无法售出此物品。</text>
+<text id="232003">%null%</text>
+<text id="232004">%null%</text>
+<text id="232005">%null%</text>
+<text id="232006">%null%</text>
+<text id="232007">%null%</text>
+<text id="232008">%null%</text>
+<text id="232009">%null%</text>
+<text id="232010">无法售出当前装备中的物品。</text>
+<text id="232011">物品售出时，镶嵌的血晶石将丢失。
+是否确定?</text>
+<text id="232012">镶嵌的血晶石也会一并售出
+是否确定?</text>
+<text id="251000">存放&lt;?itemName?&gt;请选择数量。</text>
+<text id="251001">存放&lt;?itemName?&gt;</text>
+<text id="251002">所选物品将置于仓库中</text>
+<text id="251003">存放所有&lt;?itemName?&gt;</text>
+<text id="251004">已存放
+最大数量的
+&lt;?itemName?&gt;。
+多出来的物品将保留在物品栏中。</text>
+<text id="251005">由于将超过仓库上限，
+&lt;?itemName?&gt;无法存入仓库。</text>
+<text id="251006">无法存放当前装备中的物品。</text>
+<text id="251007">由于目前这件物品正在快捷物品栏中，
+除此之外的所有物品都已经储藏好了。</text>
+<text id="251008">所选物品
+将置于仓库中</text>
+<text id="251009">%null%</text>
+<text id="251010">选择要拿取的&lt;?itemName?&gt;数量</text>
+<text id="251011">拿取&lt;?itemName?&gt;</text>
+<text id="251012">将所选物品返还到库存</text>
+<text id="251013">拿取全部&lt;?itemName?&gt;</text>
+<text id="251014">已拿取最大数量的&lt;?itemName?&gt;。
+多出的物品将保持目前的存放状态。</text>
+<text id="251015">由于将超过物品栏上限，
+无法从仓库中取出&lt;?itemName?&gt;。</text>
+<text id="262000">要去掉圣杯吗?
+(这会毁去地牢并擦除地牢进度)</text>
+<text id="262001">“圣杯地牢搜索”在离线模式中不可用。
+要使用网络功能，请返回标题菜单并登入。</text>
+<text id="262002">“圣杯铭文”在离线模式中不可用。
+要使用网络功能，请返回标题菜单并登入。</text>
+<text id="262003">“分享圣杯地牢”在离线模式中不可用。
+要使用网络功能，请返回标题菜单并登入。</text>
+<text id="262004">%null%</text>
+<text id="262005">无法更改曾被分享的圣杯地牢的私有设置</text>
+<text id="263000">要确认设置并开始仪式吗?</text>
+<text id="263001">要进行建立圣杯地牢的仪式吗?
+将会消耗材料。</text>
+<text id="263002">进行仪式的材料不足</text>
+<text id="263003">%null%</text>
+<text id="263004">%null%</text>
+<text id="263005">%null%</text>
+<text id="263006">%null%</text>
+<text id="263007">%null%</text>
+<text id="263008">%null%</text>
+<text id="263009">%null%</text>
+<text id="263010">始源圣杯仪式需要网络连接以获取服务器数据。</text>
+<text id="265000">要设为公共吗?
+*永久性设置。</text>
+<text id="265001">要设为私有吗?
+*永久性设置。</text>
+<text id="265100">隐私设置已完成。</text>
+<text id="266000">要加入选定的圣杯地牢吗?</text>
+<text id="266001">你已加入地牢，
+圣杯正置于祭坛之上。
+现在你可以探索这座圣杯地牢了。</text>
+<text id="266002">选择的搜索条件尚未解锁。</text>
+<text id="266003">你进行了一场圣杯仪式。
+现在你可以搜索具有同样圣杯的地牢。</text>
+<text id="266004">你获得了一座始源圣杯。
+现在你可以搜索具有同样始源圣杯的地牢。</text>
+<text id="266005">你在添加仪式后进行了一场圣杯仪式。
+现在你可以搜索具有同样的圣杯并使用额外仪式的地牢。</text>
+<text id="267000">已发现对应所输入的圣杯铭文的地牢，快去对应的圣杯地牢探险吧。</text>
+<text id="267001">使用圣杯铭文搜索: &lt;?string?&gt;</text>
+<text id="269000">要自动搜索可访问的圣杯地牢吗?
+注意，当前圣杯地牢中的进度将丢失。</text>
+<text id="269001">要快速搜索召唤铃铃声并开始合作吗?</text>
+<text id="269002">要快速搜索灾厄铃铃声并成为他人对手吗?</text>
+<text id="269003">“快速搜索地牢”在离线模式中不可用。
+要使用网络功能，请返回标题菜单并登入。</text>
+<text id="269004">%null%</text>
+<text id="269005">“合作快速搜索”在离线模式中不可用。
+要使用网络功能，请返回标题菜单并登入。</text>
+<text id="269006">离线模式中无法使用对手快速搜索。
+请返回标题菜单登入以使用网络功能。</text>
+<text id="269007">正在加入可进入的快速搜索圣杯地牢。
+圣杯已置于祭坛上。</text>
+<text id="271000">请选择要提取薄雾的材料数量。</text>
+<text id="271001">提取的薄雾超出上限。
+无法继续提取薄雾。</text>
+<text id="271002">超过持有上限的薄雾将存放于仓库中</text>
+<text id="302000">要将这名猎人送回他自己的世界吗?</text>
+<text id="302001">没有可离队的人。</text>
+<text id="302110">停止搜寻合作助手?</text>
+<text id="302111">停止搜寻其他世界可帮忙的猎人?</text>
+<text id="302112">停止搜寻其他世界可威胁的猎人？</text>
+<text id="302113">还不能鸣响这个铃。
+此功能目前不可用。</text>
+<text id="302114">%null%</text>
+<text id="302115">%null%</text>
+<text id="302116">%null%</text>
+<text id="302117">%null%</text>
+<text id="302118">%null%</text>
+<text id="302119">%null%</text>
+<text id="302120">%null%</text>
+<text id="302121">%null%</text>
+<text id="302122">%null%</text>
+<text id="302123">此时没有共鸣。
+此功能目前不可用。</text>
+<text id="302124">要结束并返回自己的世界吗?</text>
+<text id="302200">正在搜寻召唤铃的铃声</text>
+<text id="302201">正在搜索灾厄铃的铃声</text>
+<text id="302202">%null%</text>
+<text id="302203">%null%</text>
+<text id="302204">%null%</text>
+<text id="302205">%null%</text>
+<text id="302206">%null%</text>
+<text id="302207">%null%</text>
+<text id="302208">%null%</text>
+<text id="302209">%null%</text>
+<text id="302210">搜索符合密码的召唤铃铃声。</text>
+<text id="305000">离线模式中无法查看“血族名册”。</text>
+<text id="305001">无法获取名册信息。</text>
+<text id="305002">结束查看血族名册。</text>
+<text id="305003">正在获取名册信息。</text>
+<text id="305004">%null%</text>
+<text id="305005">%null%</text>
+<text id="305006">%null%</text>
+<text id="305007">%null%</text>
+<text id="305008">%null%</text>
+<text id="305009">%null%</text>
+<text id="305010">离线模式中无法检查联盟目录。</text>
+<text id="305011">无法获取目录信息</text>
+<text id="305012">离开联盟目录</text>
+<text id="305013">获取名册信息</text>
+<text id="310000">你还没有记下任何笔记。</text>
+<text id="310001">没有最近阅读的笔记。</text>
+<text id="311000">要删除此笔记吗?</text>
+<text id="311001">这条笔记不错。</text>
+<text id="311002">这条笔记真烂。</text>
+<text id="321000">将使用当前内容作为笔记。</text>
+<text id="322000">要将此笔记从列表中删除吗?</text>
+<text id="400001">无法载入存档数据。</text>
+<text id="400002">存档数据已被破坏。</text>
+<text id="400003">在上一会话结束时未选择“退出游戏”(系统菜单中)。
+
+未能以“退出游戏”结束会话可能会造成进度的丢失。</text>
+<text id="401001">返回到标题菜单。</text>
+<text id="401002">在离线模式下开始游戏。
+
+要使用网络功能，请检查你的连接是否设置正确，然后在标题菜单上
+再度“登入”。</text>
+<text id="401003">%null%</text>
+<text id="401004">%null%</text>
+<text id="401005">%null%</text>
+<text id="401006">%null%</text>
+<text id="401007">%null%</text>
+<text id="401008">%null%</text>
+<text id="401009">%null%</text>
+<text id="401010">要以联机模式游戏吗?</text>
+<text id="401011">网络连接中断。
+切换至离线模式。
+要使用网络功能，请检查连接是否正确设置，然后从标题菜单再次
+“登入”。</text>
+<text id="401012">你已经登出 "PlayStation Network"。
+正在切换到离线模式。
+要使用网络功能，请检查你的连接是否设置正确，然后在标题菜单上
+选择“登入”。</text>
+<text id="401013">与 "PlayStation Network" 的通讯已断开。
+正在切换到离线模式。
+要使用网络功能，请检查你的连接是否设置正确，然后在标题菜单上
+选择“登入”。</text>
+<text id="401102">无法创建存档数据。
+按“确定”重试。</text>
+<text id="401103">无法载入存档数据。
+按“确定”重试。</text>
+<text id="401104">保存数据已损坏。
+删除并创建新数据?</text>
+<text id="401105">无法删除存档数据。
+按“确定”重试。</text>
+<text id="401106">无法更新存档数据。
+按“确定”重试。</text>
+<text id="401107">保存数据已损坏。
+重新创建保存数据?</text>
+<text id="401108">此游戏存档适用于新版的游戏。如果想使用此游戏存档，请退出应用程序，接下来安装最新的更新文件，然后重新启动。</text>
+<text id="401109">找不到 Bloodborne: The Old Hunters。请重新下载 DLC，然后才可以使用此游戏存档。</text>
+<text id="401170">你缺少此 DLC 的许可证。
+已配置的 DLC 元素将被禁用。</text>
+<text id="401171">下载内容数据已损坏。
+请删除主机上的数据
+并重新下载。</text>
+<text id="401172">无法加载 DLC。
+选择“确定”重试。</text>
+<text id="401201">无法连接到网络。
+请检查你的网络设置。</text>
+<text id="401202">网络状态检查失败。</text>
+<text id="401203">你目前尚未登录到 "PlayStation Network"。
+请登入以使用在线功能。</text>
+<text id="401204">登入状态检查失败。</text>
+<text id="401205">因年龄限制而无法使用网络功能。</text>
+<text id="401206">新版系统软件已发布
+要使用网络功能，请更新系统软件。</text>
+<text id="401207">游戏更新已上线。要使用网络功能，请安装更新并重新开始游戏。</text>
+<text id="401208">网络功能检查失败。</text>
+<text id="401209">无法获取家长控制信息</text>
+<text id="401210">无法获取 Bloodborne 服务器信息。
+选择“确定”可尝试再次获取。</text>
+<text id="401211">无法解析 Bloodborne 服务器状态</text>
+<text id="401212">&lt;?ssInfoMsg?&gt;</text>
+<text id="401213">你目前处于离线状态。</text>
+<text id="401214">在线状态检查失败。</text>
+<text id="401402">即将在未连接服务器的情况下开始游戏。
+
+从标题菜单选择“登入”以便使用在线功能玩游戏。</text>
+<text id="401403">%null%</text>
+<text id="401404">%null%</text>
+<text id="401405">%null%</text>
+<text id="401406">%null%</text>
+<text id="401407">%null%</text>
+<text id="401408">%null%</text>
+<text id="401409">%null%</text>
+<text id="401410">%null%</text>
+<text id="401411">服务条款已更改。
+
+请重新了解协议条款。</text>
+<text id="401501">发生网络错误。
+选择“确定”重试。</text>
+<text id="401502">这名用户的 Bloodborne
+服务器使用已终止。</text>
+<text id="401503">无法登入 Bloodborne 服务器。
+选择“确定”再次尝试登入。</text>
+<text id="401504">%null%</text>
+<text id="401505">%null%</text>
+<text id="401506">%null%</text>
+<text id="401507">%null%</text>
+<text id="401508">%null%</text>
+<text id="401509">%null%</text>
+<text id="401510">%null%</text>
+<text id="401511">此版本的游戏无法与 Bloodborne 服务器
+取得联系。
+请下载最新更新以使用网络功能。</text>
+<text id="401601">无法获取信息。
+选择“确定”可尝试再次获取。</text>
+<text id="401602">%null%</text>
+<text id="401603">无法验证你的 PlayStation(R)Plus 帐号。</text>
+<text id="401604">在线游戏已经暂停，因为你的PlayStation(R)Plus帐户无法通过身份验证</text>
+<text id="401605">无法验证你的 PlayStation(R)Plus 会员身份。
+按“确定”可重新尝试在 PlayStation(R)Plus 进行验证。
+按“取消”不验证继续。
+请注意，不验证你将无法进行在线游戏。</text>
+<text id="401606">无法验证你的 PlayStation(R)Plus 会员身份。
+按“确定”可重新尝试在 PlayStation(R)Plus 进行验证。
+按“取消”不验证继续。
+请注意，不验证你将无法进行在线游戏。</text>
+<text id="401607">尚且无法验证你的PlayStation(R)Plus 帐户。
+在离线模式下开始游戏。</text>
+<text id="401701">无法创建更多的人物资料。
+要删除现有的人物资料并新建吗?
+
+注意，你最多只能创建 10 个人物资料。</text>
+<text id="401731">无法将在线角色数据重置为默认值。
+选择“重试”再次尝试。
+
+要不使用网络功能继续游戏，请选择“继续”。</text>
+<text id="401732">无法保存角色数据。
+选择“重试”再次尝试。
+
+要返回标题菜单，请选择“返回标题”。</text>
+<text id="401733">无法记录笔记搜索信息。
+选择“重试”再次尝试。
+
+要不使用网络功能继续游戏，请选择“继续”。</text>
+<text id="401734">%null%</text>
+<text id="401735">无法记录信使信息。
+选择“重试”以再次尝试。
+
+要不使用网络功能继续游戏，请选择“继续”。</text>
+<text id="401801">等待奖杯信息更新完成</text>
+<text id="401802">%null%</text>
+<text id="401803">%null%</text>
+<text id="401804">%null%</text>
+<text id="401805">%null%</text>
+<text id="401806">%null%</text>
+<text id="401807">%null%</text>
+<text id="401808">%null%</text>
+<text id="401809">%null%</text>
+<text id="401810">%null%</text>
+<text id="401811">在离线模式下开始游戏，
+因为游戏尚未完全安装</text>
+<text id="401901">由于你已被拒绝许可，无法从 Bloodborne 服务器检索数据</text>
+<text id="401902">你无法访问 Bloodborne 服务器。</text>
+<text id="401903">你与 Bloodborne 服务器的
+连接已中断。</text>
+<text id="401904">无法与 Bloodborne 服务器进行通信。
+选择“确定”以重试。</text>
+<text id="401905">%null%</text>
+<text id="401906">%null%</text>
+<text id="401907">%null%</text>
+<text id="401908">%null%</text>
+<text id="401909">%null%</text>
+<text id="401910">%null%</text>
+<text id="401911">由于你已被拒绝许可，无法从 Bloodborne 服务器检索数据。</text>
+<text id="401912">你无法访问 Bloodborne 服务器。</text>
+<text id="401913">你与 Bloodborne 服务器的
+连接已中断</text>
+<text id="401914">无法与 Bloodborne 服务器进行通信。
+选择“确定”以重试。</text>
+<text id="401991">处理失败。
+正在返回标题菜单...</text>
+<text id="401992">%null%</text>
+<text id="401993">%null%</text>
+<text id="401994">%null%</text>
+<text id="401995">%null%</text>
+<text id="401996">%null%</text>
+<text id="401997">%null%</text>
+<text id="401998">%null%</text>
+<text id="401999">%null%</text>
+<text id="402000">%null%</text>
+<text id="402001">要删除未完成的角色并返回标
+题菜单吗?</text>
+<text id="402002">确认完成角色创建吗?</text>
+<text id="402003">角色需要起名。
+在完成角色创建之前请输入一个名字。</text>
+<text id="402004">无法保存角色信息。</text>
+<text id="402005">%null%</text>
+<text id="402006">%null%</text>
+<text id="402007">%null%</text>
+<text id="402008">%null%</text>
+<text id="402009">%null%</text>
+<text id="402010">要将对角色的所有更改重置为默认值吗？</text>
+<text id="402011">%null%</text>
+<text id="402012">%null%</text>
+<text id="402013">%null%</text>
+<text id="402014">%null%</text>
+<text id="402015">%null%</text>
+<text id="402016">%null%</text>
+<text id="402017">%null%</text>
+<text id="402018">%null%</text>
+<text id="402019">%null%</text>
+<text id="402020">所选拼写包含不适当的语言，
+无法用作角色名称。
+
+输入另一个名称。</text>
+<text id="402021">%null%</text>
+<text id="402022">%null%</text>
+<text id="402023">%null%</text>
+<text id="402024">%null%</text>
+<text id="402025">%null%</text>
+<text id="402026">%null%</text>
+<text id="402027">%null%</text>
+<text id="402028">%null%</text>
+<text id="402029">%null%</text>
+<text id="402030">更改性别将重置某些设置。
+这样行吗?</text>
+<text id="402100">要完成编辑吗?</text>
+<text id="404001">停止初始设置并返回到标题菜单?</text>
+<text id="404002">无法保存设置。
+选择“重试”以重试。
+
+要不保存继续游戏，请选择“继续”。</text>
+<text id="404003">%null%</text>
+<text id="404004">%null%</text>
+<text id="404005">%null%</text>
+<text id="404006">%null%</text>
+<text id="404007">%null%</text>
+<text id="404008">%null%</text>
+<text id="404009">%null%</text>
+<text id="404010">要放弃当前更改并返回吗?</text>
+<text id="406011">要用选定的人物资料开始吗?</text>
+<text id="406012">要删除选择的资料并开始新游戏吗?</text>
+<text id="406013">确定删除所选的人物资料?</text>
+<text id="406014">%null%</text>
+<text id="406015">%null%</text>
+<text id="406016">%null%</text>
+<text id="406017">%null%</text>
+<text id="406018">%null%</text>
+<text id="406019">%null%</text>
+<text id="406020">游戏安装不完整。
+无法加载由完全安装的游戏创建的存档数据。</text>
+<text id="406021">游戏安装不完整。
+无法加载存档数据。</text>
+<text id="420000">将当前设置保存为收藏?</text>
+<text id="420001">这些设定已有保存的偏好值。
+要保存并覆盖目前的设置吗?</text>
+<text id="420002">要放弃当前更改并加载偏好值吗?</text>
+<text id="420003">%null%</text>
+<text id="420004">%null%</text>
+<text id="420005">%null%</text>
+<text id="420006">%null%</text>
+<text id="420007">%null%</text>
+<text id="420008">%null%</text>
+<text id="420009">%null%</text>
+<text id="420010">没有保存收藏值</text>
+<text id="506000">由于会超出物品栏或仓库的最大值，部分物品无法获得</text>
+<text id="506001">由于超过了物品栏或仓库的最大值，
+无法获得&lt;?itemName?&gt;</text>
+<text id="506002">由于超过了物品栏或仓库的最大值，
+无法获得全部&lt;?itemName?&gt;</text>
+<text id="600000">*</text>
+<text id="600001">*</text>
+<text id="600002">*</text>
+<text id="600003">*</text>
+<text id="600100">*</text>
+<text id="600101">*</text>
+<text id="600102">*</text>
+<text id="600103">*</text>
+<text id="600200">*</text>
+<text id="600201">*</text>
+<text id="600202">*</text>
+<text id="600203">*</text>
+<text id="600300">*</text>
+<text id="600301">*</text>
+<text id="600302">*</text>
+<text id="600303">*</text>
+<text id="600400">*</text>
+<text id="600401">*</text>
+<text id="600402">*</text>
+<text id="600403">*</text>
+<text id="600500">*</text>
+<text id="600501">*</text>
+<text id="600502">*</text>
+<text id="600503">*</text>
+<text id="600600">*</text>
+<text id="600601">*</text>
+<text id="600602">*</text>
+<text id="600603">*</text>
+<text id="601000">*</text>
+<text id="601001">*</text>
+<text id="601002">*</text>
+<text id="601003">*</text>
+<text id="601100">*</text>
+<text id="601101">*</text>
+<text id="601102">*</text>
+<text id="601103">*</text>
+<text id="601200">*</text>
+<text id="601201">*</text>
+<text id="601202">*</text>
+<text id="601203">*</text>
+<text id="601300">*</text>
+<text id="601301">*</text>
+<text id="601302">*</text>
+<text id="601303">*</text>
+<text id="601400">*</text>
+<text id="601401">*</text>
+<text id="601402">*</text>
+<text id="601403">*</text>
+<text id="601500">*</text>
+<text id="601501">*</text>
+<text id="601502">*</text>
+<text id="601503">*</text>
+<text id="601600">*</text>
+<text id="601601">*</text>
+<text id="601602">*</text>
+<text id="601603">*</text>
+<text id="602000">*</text>
+<text id="602001">*</text>
+<text id="602002">*</text>
+<text id="602003">*</text>
+<text id="602100">*</text>
+<text id="602101">*</text>
+<text id="602102">*</text>
+<text id="602103">*</text>
+<text id="602200">*</text>
+<text id="602201">*</text>
+<text id="602202">*</text>
+<text id="602203">*</text>
+<text id="602300">*</text>
+<text id="602301">*</text>
+<text id="602302">*</text>
+<text id="602303">*</text>
+<text id="602400">*</text>
+<text id="602401">*</text>
+<text id="602402">*</text>
+<text id="602403">*</text>
+<text id="602500">*</text>
+<text id="602501">*</text>
+<text id="602502">*</text>
+<text id="602503">*</text>
+<text id="602600">*</text>
+<text id="602601">*</text>
+<text id="602602">*</text>
+<text id="602603">*</text>
+</entries>
+</fmg>

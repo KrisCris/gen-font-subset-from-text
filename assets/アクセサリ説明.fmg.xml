@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fmg>
+<compression>None</compression>
+<version>DarkSouls3</version>
+<bigendian>False</bigendian>
+<unicode>True</unicode>
+<entries>
+<text id="1">侵略探知道具擁有者的世界</text>
+<text id="2">【除錯】增加魔法空格三格</text>
+<text id="100">%null%</text>
+</entries>
+</fmg>

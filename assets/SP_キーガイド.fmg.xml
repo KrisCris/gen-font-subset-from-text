@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fmg>
+<compression>None</compression>
+<version>DarkSouls3</version>
+<bigendian>False</bigendian>
+<unicode>True</unicode>
+<entries>
+<text id="1000">左触摸板键</text>
+<text id="1001">右触摸板键</text>
+<text id="100000">确定</text>
+<text id="100001">确认</text>
+<text id="100002">使用物品</text>
+<text id="100003">编辑</text>
+<text id="100004">添加/去除仪式</text>
+<text id="100005">添加/去除仪式</text>
+<text id="100006">%null%</text>
+<text id="100007">放弃</text>
+<text id="100008">装备/卸下</text>
+<text id="100009">存放</text>
+<text id="100010">拿取</text>
+<text id="100011">购买</text>
+<text id="100012">出售</text>
+<text id="100013">详细信息</text>
+<text id="100014">查看成员信息</text>
+<text id="110000">返回</text>
+<text id="110001">关闭</text>
+<text id="110002">取消</text>
+<text id="120000">显示</text>
+<text id="120001">立即测试</text>
+<text id="120002">完成</text>
+<text id="120003">保护开/关</text>
+<text id="120004">去除</text>
+<text id="120005">确认</text>
+<text id="120006">开始仪式</text>
+<text id="120007">删除</text>
+<text id="120008">样本</text>
+<text id="120009">展示自我</text>
+<text id="120010">分享地牢</text>
+<text id="120011">显示调色盘</text>
+<text id="120012">显示滑块</text>
+<text id="130000">排序</text>
+<text id="130001">全部放弃</text>
+<text id="130002">存储所有</text>
+<text id="130003">拿取所有</text>
+<text id="130004">切换</text>
+<text id="130005">切换动作</text>
+<text id="130006">切换状态</text>
+<text id="130007">显示排名榜前列</text>
+<text id="140000">更改笔记格式</text>
+<text id="140001">显示仓库</text>
+<text id="140002">显示物品栏</text>
+<text id="150000">滚动</text>
+<text id="150001">%null%</text>
+<text id="150002">更改 10</text>
+<text id="150003">增加 10</text>
+<text id="150004">减少 10</text>
+<text id="150005">向上翻页</text>
+<text id="150006">向下翻页</text>
+<text id="150007">存储所有</text>
+<text id="150008">检索全部</text>
+<text id="150009">修复全部</text>
+<text id="150010">去除</text>
+<text id="150011">下个 100</text>
+<text id="150012">上 100</text>
+<text id="150013">推近</text>
+<text id="150014">拉远</text>
+<text id="150015">更改装备位置</text>
+<text id="150016">缩放</text>
+<text id="160000">*</text>
+<text id="160001">退出</text>
+<text id="200000">选择</text>
+<text id="200001">更改</text>
+<text id="200002">*</text>
+<text id="200003">无更改。</text>
+<text id="200004">%null%</text>
+<text id="200005">调整</text>
+<text id="200006">滚动</text>
+<text id="310000">旋转</text>
+<text id="320000">帮助</text>
+<text id="320001">重置摄影机</text>
+<text id="400000">*</text>
+<text id="400001">*</text>
+<text id="400002">*</text>
+<text id="400003">删除</text>
+<text id="400004">好评</text>
+<text id="400005">恶评</text>
+<text id="400006">*</text>
+<text id="400007">控制</text>
+<text id="407000">%null%</text>
+<text id="407001">确定</text>
+</entries>
+</fmg>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fmg>
+<compression>None</compression>
+<version>DarkSouls3</version>
+<bigendian>False</bigendian>
+<unicode>True</unicode>
+<entries>
+<text id="1">決定</text>
+<text id="2">取消</text>
+<text id="3">是</text>
+<text id="4">否</text>
+<text id="5">%null%</text>
+<text id="6">%null%</text>
+<text id="7">%null%</text>
+<text id="8">%null%</text>
+<text id="18300">&lt;?selectUD?&gt;：選擇 &lt;?conclusion?&gt;：細節 &lt;?categoryChangeL?&gt;：往前一百名 &lt;?categoryChangeR?&gt;：往後一百名 &lt;?shortCutL?&gt;：顯示第一名 &lt;?shortCutR?&gt;：顯示自己</text>
+<text id="41000">將刪除您所選擇的履歷，
+請您確定。</text>
+<text id="45000">本遊戲對應自動儲存功能。
+在自動儲存時，硬碟讀取燈會閃爍，
+此時請勿關閉主機電源。</text>
+<text id="45001">儲存資料的版本與遊戲版本不符，
+請結束遊戲，登入PlayStation®Network
+更新遊戲。</text>
+<text id="45100">硬碟剩餘容量不足，
+要玩《DARK SOULS》，
+硬碟須有&lt;?dataSize?&gt;MB以上的空間。
+
+請結束遊戲，
+刪除硬碟中不要的資料。</text>
+<text id="45101">%null%</text>
+<text id="45102">%null%</text>
+<text id="45103">硬碟剩餘容量不足，安裝獎盃組，
+硬碟須有&lt;?dataSize?&gt;MB以上空間。
+
+選擇「決定」後便會啟動刪除檔案的工具程式，
+選擇「取消」將中斷安裝作業。</text>
+<text id="45104">%null%</text>
+<text id="45105">%null%</text>
+<text id="45106">%null%</text>
+<text id="45107">%null%</text>
+<text id="45108">%null%</text>
+<text id="45109">%null%</text>
+<text id="45110">儲存資料已損毀。</text>
+<text id="45111">儲存資料已損毀。
+要重新製作一份儲存資料嗎？
+本儲存資料將覆蓋原先的儲存資料。
+
+按下取消按鈕將重新讀取儲存資料。</text>
+<text id="45112">%null%</text>
+<text id="45113">%null%</text>
+<text id="45114">%null%</text>
+<text id="45115">%null%</text>
+<text id="45116">%null%</text>
+<text id="45117">%null%</text>
+<text id="45118">%null%</text>
+<text id="45119">%null%</text>
+<text id="45120">儲存資料讀取失敗。</text>
+<text id="45121">儲存資料讀取失敗。
+要重新製作一份儲存資料嗎？
+本儲存資料將覆蓋原先的儲存資料。
+
+按下取消按鈕將重新讀取儲存資料。</text>
+<text id="45122">前次結束時，可能並未到系統選單
+選擇「結束遊戲」。
+要離開遊戲時，請到系統選單
+選擇「結束遊戲」。
+
+若不選「結束遊戲」而離開，
+將可能不會從離開時的遊戲進度開始。</text>
+<text id="45200">資料儲存失敗。</text>
+<text id="45201">資料儲存失敗。</text>
+<text id="45250">獎盃組安裝失敗。
+先結束遊戲，
+並重新啟動《DARK SOULS》，
+將可重新安裝。</text>
+<text id="45400">履歷數量已達上限，無法繼續增加。
+要刪除現存的履歷，以製作全新履歷嗎？
+
+※最多可以製作十份履歷。</text>
+<text id="47000">確認檔案數量。</text>
+<text id="47100">讀取儲存資料，
+請勿關閉主機電源。</text>
+<text id="47101">核對儲存資料，
+請勿關閉主機電源。</text>
+<text id="47102">正在讀取，
+請勿關閉主機電源。</text>
+<text id="47103">%null%</text>
+<text id="47104">%null%</text>
+<text id="47105">%null%</text>
+<text id="47106">%null%</text>
+<text id="47107">%null%</text>
+<text id="47108">%null%</text>
+<text id="47109">%null%</text>
+<text id="47110">更新儲存資料，
+請勿關閉主機電源。</text>
+<text id="47111">更新儲存資料，
+請勿關閉主機電源。</text>
+<text id="47112">製作儲存資料，
+請勿關閉主機電源。</text>
+<text id="47113">刪除履歷，
+請勿關閉主機電源。</text>
+<text id="47114">%null%</text>
+<text id="47115">%null%</text>
+<text id="47116">%null%</text>
+<text id="47117">%null%</text>
+<text id="47118">%null%</text>
+<text id="47119">%null%</text>
+<text id="47120">獎盃組在設定為預設狀態，
+請勿關閉主機電源。</text>
+<text id="47121">安裝獎盃組，
+請勿關閉主機電源。</text>
+<text id="48000">放棄先前的修改並回到主選單。</text>
+<text id="50001">取得排行榜資料。</text>
+<text id="50002">由於目前是離線模式，無法取得排行榜資料。</text>
+<text id="50501">以離線模式開始遊戲。</text>
+<text id="50502">您並未連線，
+無法連線遊玩。</text>
+<text id="50503">您的PlayStation®Network帳號
+設定了分級保護鎖，
+無法使用線上服務。</text>
+<text id="50504">您尚未登入。
+若不登入，將不能連線遊玩。
+您要登入嗎？</text>
+<text id="50505">連線失敗，
+無法連線遊玩。</text>
+<text id="50506">此版本無法連線遊玩。</text>
+<text id="50507">您尚未登入。
+要直接開始遊戲嗎？
+僅可玩離線模式。</text>
+<text id="50520">目前並未提供服務，
+僅可玩離線模式。</text>
+<text id="50521">尚未提供服務，
+僅可玩離線模式。</text>
+<text id="50522">目前伺服端正在維護，
+僅可玩離線模式。</text>
+<text id="50523">伺服器無回應，
+僅可玩離線模式。</text>
+<text id="50524">目前無法使用伺服器，
+僅可玩離線模式。</text>
+<text id="50525">目前無法使用伺服器，
+僅可玩離線模式。</text>
+<text id="51100">您已登出
+PlayStation®Network，
+現將回到標題畫面。</text>
+<text id="65400">%null%</text>
+<text id="65401">%null%</text>
+<text id="65402">%null%</text>
+<text id="65403">%null%</text>
+<text id="65404">%null%</text>
+<text id="65405">%null%</text>
+<text id="65406">%null%</text>
+<text id="65407">%null%</text>
+<text id="65408">%null%</text>
+<text id="65409">%null%</text>
+<text id="65410">下載詳細資訊。</text>
+<text id="65411">無法下載詳細資訊。
+
+※僅有排行榜高名次角色才會登錄詳細資訊。</text>
+<text id="65412">下載自己的資訊。</text>
+<text id="65413">找不到自己的資訊。</text>
+<text id="70000">%null%</text>
+<text id="20001000">連線對話已中斷。</text>
+<text id="20001001">因網路連線不穩，
+現將退出連線對話。</text>
+<text id="20001002">連線中斷，
+現將回到標題畫面。</text>
+<text id="20001003">設定連線對話失敗。</text>
+<text id="20001004">參與連線對話失敗。</text>
+<text id="20001005">連線中斷，
+現將回到標題畫面。</text>
+<text id="20001006">%null%</text>
+<text id="20001007">%null%</text>
+<text id="20001008">%null%</text>
+<text id="20001009">%null%</text>
+<text id="20001010">您已登出
+PlayStation®Network，
+現將回到標題畫面。</text>
+<text id="20001011">%null%</text>
+<text id="20001012">%null%</text>
+<text id="20001013">%null%</text>
+<text id="20001014">%null%</text>
+<text id="20001015">P2P連線已中斷，
+現將回到標題畫面。</text>
+</entries>
+</fmg>
