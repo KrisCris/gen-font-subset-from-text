@@ -14,6 +14,8 @@ from fontTools.ttLib.tables._c_m_a_p import CmapSubtable
 import freetype
 from PIL import Image, ImageDraw
 
+LOG_FILE = None
+
 def parse_xml_file(xml_path):
     """Parse a single XML file, collect all characters from .text in every node."""
     chars = set()
@@ -24,8 +26,9 @@ def parse_xml_file(xml_path):
             if node.text:
                 chars.update(node.text)
     except Exception as e:
-        print(f"Error parsing {xml_path}: {e}")
+        log(f"Error parsing {xml_path}: {e}")
     return chars
+
 
 def parse_xml_inputs(xml_dirs, xml_files):
     """
@@ -37,7 +40,7 @@ def parse_xml_inputs(xml_dirs, xml_files):
     # For each directory, read all .xml files
     for d in xml_dirs:
         if not os.path.isdir(d):
-            print(f"Warning: {d} is not a directory, skipping.")
+            log(f"Warning: {d} is not a directory, skipping.")
             continue
         for root, dirs, files in os.walk(d):
             for fname in files:
@@ -48,11 +51,12 @@ def parse_xml_inputs(xml_dirs, xml_files):
     # For each explicit XML file
     for f in xml_files:
         if not os.path.isfile(f):
-            print(f"Warning: {f} is not a file, skipping.")
+            log(f"Warning: {f} is not a file, skipping.")
             continue
         required_chars.update(parse_xml_file(f))
 
     return required_chars
+
 
 def parse_common_chars_file(txt_path):
     """
@@ -71,8 +75,12 @@ def parse_common_chars_file(txt_path):
                 if line:
                     chars.update(line)
     except Exception as e:
-        print(f"Error reading {txt_path}: {e}")
+        log(f"Error reading {txt_path}: {e}")
     return chars
+
+def log(msg):
+    print(msg)
+    print(msg, file=LOG_FILE)
 
 def font_supports_char(ttfont, char_code):
     """Return the glyph name if the font supports this char_code, else None."""
@@ -81,6 +89,7 @@ def font_supports_char(ttfont, char_code):
         return cmap.get(char_code, None)
     except KeyError:
         return None
+
 
 def copy_glyph_and_dependencies(glyph_name, source_font, target_font, copied_glyphs):
     """
@@ -116,7 +125,10 @@ def copy_glyph_and_dependencies(glyph_name, source_font, target_font, copied_gly
     if glyph_obj.isComposite():
         for component in glyph_obj.components:
             component_name = component.glyphName
-            copy_glyph_and_dependencies(component_name, source_font, target_font, copied_glyphs)
+            copy_glyph_and_dependencies(
+                component_name, source_font, target_font, copied_glyphs
+            )
+
 
 def get_or_create_cmap12(ttfont):
     """
@@ -125,9 +137,11 @@ def get_or_create_cmap12(ttfont):
     """
     cmap_obj = ttfont["cmap"]
     for subtable in cmap_obj.tables:
-        if (subtable.platformID == 3 and
-            subtable.platEncID == 10 and
-            subtable.format == 12):
+        if (
+            subtable.platformID == 3
+            and subtable.platEncID == 10
+            and subtable.format == 12
+        ):
             return subtable
     # Not found, create a new one
     cmap12 = CmapSubtable.newSubtable(12)
@@ -138,6 +152,7 @@ def get_or_create_cmap12(ttfont):
     cmap_obj.tables.append(cmap12)
     return cmap12
 
+
 def add_char_to_cmap(ttfont, char_code, glyph_name):
     """
     Add (char_code -> glyph_name) to a format 12 cmap subtable,
@@ -146,7 +161,8 @@ def add_char_to_cmap(ttfont, char_code, glyph_name):
     cmap12 = get_or_create_cmap12(ttfont)
     cmap12.cmap[char_code] = glyph_name
 
-def build_minimal_font(required_chars, fonts_priority, output_ttf_path, log_file=None):
+
+def build_minimal_font(required_chars, fonts_priority, output_ttf_path):
     """
     Build a minimal TTF that contains glyphs for all characters in `required_chars`,
     using the provided `fonts_priority` list in order. The first font that supports
@@ -160,9 +176,7 @@ def build_minimal_font(required_chars, fonts_priority, output_ttf_path, log_file
     if not os.path.isfile(base_font_path):
         raise FileNotFoundError(f"Base font not found: {base_font_path}")
     msg = f"Using '{base_font_path}' as the base font."
-    print(msg)
-    if log_file:
-        log_file.write(msg + "\n")
+    log(msg)
 
     merged_font = TTFont(base_font_path)
 
@@ -189,12 +203,12 @@ def build_minimal_font(required_chars, fonts_priority, output_ttf_path, log_file
                 # Add to cmap (format 12)
                 add_char_to_cmap(merged_font, char_code, glyph_name)
 
-                msg = (f"Character '{ch}' (U+{char_code:04X}) "
-                       f"using font '{os.path.basename(fpath)}' "
-                       f"-> glyph '{glyph_name}'")
-                print(msg)
-                if log_file:
-                    log_file.write(msg + "\n")
+                msg = (
+                    f"Character '{ch}' (U+{char_code:04X}) "
+                    f"using font '{os.path.basename(fpath)}' "
+                    f"-> glyph '{glyph_name}'"
+                )
+                log(msg)
 
                 found = True
                 break
@@ -203,21 +217,22 @@ def build_minimal_font(required_chars, fonts_priority, output_ttf_path, log_file
 
     if missing_chars:
         msg = "WARNING: These characters were not found in any font:"
-        print(msg)
-        if log_file:
-            log_file.write(msg + "\n")
+        log(msg)
+
         for ch in missing_chars:
             warn_str = f"  U+{ord(ch):04X} '{ch}'"
-            print(warn_str)
-            if log_file:
-                log_file.write(warn_str + "\n")
+            log(warn_str)
 
     # 3) Remove any original glyphs in the base font not used
     #    (except .notdef, .null, etc.). If you want to keep them, skip this step.
     glyf_table = merged_font["glyf"]
     all_glyphs = list(glyf_table.keys())
     for gname in all_glyphs:
-        if gname not in copied_glyphs and gname not in (".notdef", ".null", "nonmarkingreturn"):
+        if gname not in copied_glyphs and gname not in (
+            ".notdef",
+            ".null",
+            "nonmarkingreturn",
+        ):
             del merged_font["glyf"][gname]
             if gname in merged_font["hmtx"].metrics:
                 del merged_font["hmtx"].metrics[gname]
@@ -228,15 +243,15 @@ def build_minimal_font(required_chars, fonts_priority, output_ttf_path, log_file
     # Save
     merged_font.save(output_ttf_path)
     msg = f"Saved minimal font to '{output_ttf_path}'."
-    print(msg)
-    if log_file:
-        log_file.write(msg + "\n")
+    log(msg)
 
-def generate_glyph_sheet(font_path, characters, png_path="glyph_sheet.png", pt_size=64, columns=16):
+def generate_glyph_sheet(
+    font_path, characters, png_path="glyph_sheet.png", pt_size=64, columns=16
+):
     """
     Renders each character from `characters` in the given TTF/OTF font
     using freetype-py, arranges them into a grid, and saves as a .png.
-    
+
     Args:
         font_path (str): Path to the TTF/OTF font.
         characters (Iterable of str): The set/list of characters to display.
@@ -252,7 +267,7 @@ def generate_glyph_sheet(font_path, characters, png_path="glyph_sheet.png", pt_s
     # Convert the set to a sorted list so we have a consistent ordering
     chars_list = sorted(characters)
     if not chars_list:
-        print("No characters to visualize. Skipping sheet generation.")
+        log("No characters to visualize. Skipping sheet generation.")
         return
 
     # First pass: measure each glyph to find max width/height
@@ -317,90 +332,94 @@ def generate_glyph_sheet(font_path, characters, png_path="glyph_sheet.png", pt_s
 
         # Draw codepoint label at bottom of cell
         code_str = f"U+{ord(ch):04X}"
-        draw.text((x_off+2, y_off + max_h), code_str, fill=(0, 0, 0, 255))
+        draw.text((x_off + 2, y_off + max_h), code_str, fill=(0, 0, 0, 255))
 
     # Save the final sprite sheet
     img.save(png_path)
-    print(f"Saved glyph sheet to '{png_path}'.")
+    log(f"Saved glyph sheet to '{png_path}'.")
+
 
 def main():
     parser = argparse.ArgumentParser(
         description="Build a minimal TTF containing glyphs for all characters "
-                    "extracted from a set of XML files, using multiple fonts in fallback order. "
-                    "Optionally, generate a glyph sheet (.png) visualizing the result."
+        "extracted from a set of XML files, using multiple fonts in fallback order. "
+        "Optionally, generate a glyph sheet (.png) visualizing the result."
     )
     parser.add_argument(
-        "--xml-dir", nargs="*", default=[],
-        help="One or more directories; all .xml files in these dirs are scanned."
+        "--xml-dir",
+        nargs="*",
+        default=[],
+        help="One or more directories; all .xml files in these dirs are scanned.",
     )
     parser.add_argument(
-        "--xml-file", nargs="*", default=[],
-        help="One or more XML files to scan."
+        "--xml-file", nargs="*", default=[], help="One or more XML files to scan."
     )
     parser.add_argument(
         "--common-chars-file",
-        help="Optional path to a text file containing additional common characters to include."
+        help="Optional path to a text file containing additional common characters to include.",
     )
     parser.add_argument(
-        "--fonts", nargs="+", required=True,
-        help="List of TTF fonts in fallback priority order (first = highest priority)."
+        "--fonts",
+        nargs="+",
+        required=True,
+        help="List of TTF fonts in fallback priority order (first = highest priority).",
     )
-    parser.add_argument(
-        "--output", required=True,
-        help="Path to save the minimal TTF."
-    )
+    parser.add_argument("--output", required=True, help="Path to save the minimal TTF.")
     parser.add_argument(
         "--log-file",
-        help="Optional path to save a detailed log of which character used which font."
+        help="Optional path to save a detailed log of which character used which font.",
     )
     parser.add_argument(
         "--glyph-sheet",
-        help="If provided, also generate a .png sheet of glyphs from the minimal TTF."
+        help="If provided, also generate a .png sheet of glyphs from the minimal TTF.",
     )
     parser.add_argument(
-        "--glyph-size", type=int, default=64,
-        help="Point size used for glyph rendering in the sheet (default 64)."
+        "--glyph-size",
+        type=int,
+        default=64,
+        help="Point size used for glyph rendering in the sheet (default 64).",
     )
     parser.add_argument(
-        "--glyph-cols", type=int, default=16,
-        help="Number of columns per row in the glyph sheet (default 16)."
+        "--glyph-cols",
+        type=int,
+        default=16,
+        help="Number of columns per row in the glyph sheet (default 16).",
     )
 
     args = parser.parse_args()
 
-    # 1) Collect required characters
-    required_chars = parse_xml_inputs(args.xml_dir, args.xml_file)
-    print(f"Collected {len(required_chars)} unique characters from XML inputs.")
+    # 1) Create/append to log file if specified
+    global LOG_FILE
+    with open(args.log_file or 'font_gen.log', "w", encoding="utf-8") as lf:
+        LOG_FILE = lf
 
-    # 2) If there's a common-chars file, read it and union the sets
-    if args.common_chars_file:
-        common_chars = parse_common_chars_file(args.common_chars_file)
-        old_count = len(required_chars)
-        required_chars.update(common_chars)
-        print(f"Added {len(common_chars)} chars from {args.common_chars_file}; "
-              f"total now {len(required_chars)} (was {old_count}).")
+        # 2) Collect required characters
+        required_chars = parse_xml_inputs(args.xml_dir, args.xml_file)
+        log(f"Collected {len(required_chars)} unique characters from XML inputs.")
 
-    # 3) Create/append to log file if specified
-    log_fh = None
-    if args.log_file:
-        log_fh = open(args.log_file, "w", encoding="utf-8")
+        # 3) If there's a common-chars file, read it and union the sets
+        if args.common_chars_file:
+            common_chars = parse_common_chars_file(args.common_chars_file)
+            old_count = len(required_chars)
+            required_chars.update(common_chars)
+            log(
+                f"Added {len(common_chars)} chars from {args.common_chars_file}; "
+                f"total now {len(required_chars)} (was {old_count})."
+            )
 
-    # 4) Build minimal font
-    try:
-        build_minimal_font(required_chars, args.fonts, args.output, log_file=log_fh)
-    finally:
-        if log_fh:
-            log_fh.close()
+        # 4) Build the minimal font
+        build_minimal_font(required_chars, args.fonts, args.output)
 
-    # 5) Generate glyph sheet (optional)
-    if args.glyph_sheet:
-        generate_glyph_sheet(
-            font_path=args.output,
-            characters=required_chars,
-            png_path=args.glyph_sheet,
-            pt_size=args.glyph_size,
-            columns=args.glyph_cols
-        )
+        # 5) Generate glyph sheet (optional)
+        if args.glyph_sheet:
+            generate_glyph_sheet(
+                font_path=args.output,
+                characters=required_chars,
+                png_path=args.glyph_sheet,
+                pt_size=args.glyph_size,
+                columns=args.glyph_cols,
+            )
+
 
 if __name__ == "__main__":
     main()
