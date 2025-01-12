@@ -1,5 +1,6 @@
 python font_gen.py \
---xml-dir "d:\Coding\Font Checker\assets" \
+--xml-dir "D:\Coding\Bloodborne-CN-reTranslation\item-msgbnd-dcx" \
+"D:\Coding\Bloodborne-CN-reTranslation\menu-msgbnd-dcx" \
 --fonts "d:\Coding\Font Checker\DFPKaiW5-GB.ttf" \
 "d:\Coding\Font Checker\DFPKaiW5-B5.ttf" \
 "d:\Coding\Font Checker\黎ミンY10 B.ttf" \
